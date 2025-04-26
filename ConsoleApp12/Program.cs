@@ -3,16 +3,18 @@ using System.ComponentModel.Design;
 using System.Diagnostics.CodeAnalysis;
 
 Console.WriteLine("Hello, World!");
-int sum = 0;
-int n = Convert.ToInt32(Console.ReadLine());
-int m = Convert.ToInt32(Console.ReadLine());
-
-for (int i = 0; i <= n; i++) 
+int x = Convert.ToInt32(Console.ReadLine());
+int y = Convert.ToInt32(Console.ReadLine());
+int z = Convert.ToInt32(Console.ReadLine());
+int min = x;
+if(y < min)
 {
-    sum += i;
-
-
-
+    min = y;
 
 }
-Console.WriteLine(sum);
+if (z < min)
+{
+    min = z;
+
+}
+Console.WriteLine(min);
